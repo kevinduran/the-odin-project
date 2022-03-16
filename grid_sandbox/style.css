@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.testGrid{
+    display: grid;
+    grid-template-columns:  100px 100px 100px;
+}
+
+.gridItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border: 1px solid red;
+}
