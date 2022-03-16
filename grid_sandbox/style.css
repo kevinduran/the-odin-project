@@ -8,14 +8,22 @@ body{
 
 .testGrid{
     display: grid;
-    grid-template-columns:  100px 100px 100px;
+    grid-template:  100px 100px 100px 100px 100px/ 100px 100px 100px 100px 100px;
+    background-color: rgb(80, 3, 3);
 }
 
 .gridItem{
+    border: 1px solid green;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
-    width: 100px;
-    border: 1px solid red;
 }
+
+#one{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
