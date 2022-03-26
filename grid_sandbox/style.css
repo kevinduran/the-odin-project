@@ -162,7 +162,7 @@ body{
 }
 .main_content_item_box{
     width: 90%;
-    height: 200px;
+    height: 13em;
     border-radius: 10px;
     background-color:#fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -194,7 +194,7 @@ body{
 
 
 .main_content_side_box{
-    height: 285px;
+    height: 18em;
     width: 85%;
     background-color:#fff;
     border-radius: 5%;
@@ -205,7 +205,7 @@ body{
     
 }
 .main_content_side_box_bottom{
-    height: 285px;
+    height: 20em;
     width: 85%;
     background-color:#fff;
     border-radius: 5%;
