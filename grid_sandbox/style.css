@@ -1,38 +1,148 @@
 body{
     background-color: rgb(34, 34, 34);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
 }
 
-.testGrid{
+.content_container{
     display: grid;
-    grid-template-columns: repeat(6,100px);
-    grid-template-rows: repeat(6,100px);
-
+    grid-template-columns: 25% 75%;
+    grid-template-rows: repeat(5, 20vh);
 }
 
-.gridItem{
-    border: 1px solid red;
-    color:white;
+
+
+
+/* --------------------TOP-------------------------- */
+
+.top{
+    grid-area: 1/2/2/5;
+    background-color:#fff
+}
+.top_grid_container{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: repeat(2, 50%);
+    height: 100%;
+}
+.top_item{
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-#one{
-    grid-area:1/1/2/6;
+.top_item_small_container{
+    display: flex;
+    width: 100%;
+    margin-left: 6.9%;
 }
-#two{
-    grid-area:2/2/5/5;
+.small_container_two{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 5%;
 }
-#three{
-    grid-area:2/1/6/2;
+.small_container_three{
+    display: flex;
+    align-items: center;
 }
-#four{
-    grid-area:2/6/6/5
+.small_container_three_text{
+    line-height: 5px;
 }
-#five{
-    grid-area:6/2/5/5
+.top_item_input{
+    background-color: #e2e8f0;
+    border-radius: 50px;
+    width: 80%;
+    margin-left: 2%;
+    border: none;
+}
+.top_item_button_container{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    right: 5%;
+}
+.top_item_button{
+    border:none;
+    background-color: #1992d4;
+    border-radius: 5px;
+    max-height: 25px;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #facc14;
+}
+.icon_two{
+    height: 75px;
+    width: 75px;
+    margin-right: 5%;
+}
+.btn{
+    border-radius: 50px;
+    width: 100px;
+    height:32px;
+    background-color: #1992d4;
+    color: rgb(250, 245, 245);
+    margin:0 10px;
+    border:none;
+    font-size: 0.9em;
+    
+}
+
+
+
+/* --------------------SIDE-------------------------- */
+.side{
+    background-color: #1992d4;
+    grid-area:1/1/6/2; 
+    padding-left: 10%;
+}
+
+.side_section{
+    display: flex;
+    align-items: center;
+}
+.side_logo{
+    flex:1
+}
+.side_text{
+    flex: 3;
+    color: white;
+}
+
+.side_top{
+    height: 10%;
+}
+.side_middle{
+    height: 35%;
+}
+.side_bottom{
+    height: 15%;
+}
+
+
+
+/* --------------------MAIN-------------------------- */
+
+
+
+.main{
+    grid-area:2/2/6/6;
+    background-color:#e2e8f0;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 70% 30% ;
+}
+.main_content{
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+
+}
+
+.main_content_item_box{
+    width: 40%;
+    height: 200px;
+    border: 1px solid red;
 }
