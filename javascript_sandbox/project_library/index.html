@@ -9,13 +9,20 @@
 </head>
 <body>
     <h1>add a book to your library</h1>
-    <div class="input">
-        <input type="text">
-        <button>add</button>
+    <div class="addBook">
+        <button type="button" class="openModalButton">add</button>
     </div>
-    <div class="output">
+    <div class="formModal">
+        <form>
+            <button type="button" class="closeModalButton">x</button>
+            <input class="bookTitleInput" type="text">
+            <button type="button">add book</button>
+        </form>
+    </div>
+    <div class="bookContainer">
 
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
