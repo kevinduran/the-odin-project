@@ -69,7 +69,6 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid pink;
     width: 100%;
 
 }
@@ -100,12 +99,28 @@ form{
 form span {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;    
+}
+label{
+    color: white;
+    letter-spacing: 2px;
 }
 
 .bookTitleInput{
     width: 80%;
     border-radius: 50px;
     position: relative;
+    height: 3em;
+    padding-left: 10px;
+    font-size: 1.1em;
+    max-width: 70%;
+}
+.bookTitleInput:focus{
+    outline: none;
+}
+.formButtonContainer{
+    margin-top: 4.20em;
 }
 .bookContainer {
     height: 70%;
