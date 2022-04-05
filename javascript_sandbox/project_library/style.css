@@ -5,19 +5,37 @@
 
 
 body{
-    background-color:rgb(44, 43, 43);
+    background-color:rgb(31, 31, 31);
     height: 100vh;
+    font-family: 'Lalezar', cursive;
+}
+
+
+.text-gradient {
+    background: linear-gradient(to right, #2f24ca, #ba12c6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding: 1.2em;
+} 
+
+.btn {
+    font-family: sans-serif;
+    padding: 12px 32px;
+    margin: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+    font-size: 1em;
+    letter-spacing: 3px;
 }
 
 .addBook{
-    border: 1px solid red;
     text-align: center;
-
 }
 
-
 .formModal{
-    border: 1px solid red;
     height: 100vh;
     width: 100vw;
     position: absolute;
@@ -30,9 +48,7 @@ body{
     display: block;
 }
 
-
 .bookContainer {
-    border: 1px solid red;
     height: 50%;
     margin-top: 10%;
 }

@@ -5,18 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <title>Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Lalezar&family=Rubik+Glitch&display=swap" rel="stylesheet"><title>Library</title>
 </head>
 <body>
-    <h1>add a book to your library</h1>
+    <h1 class="text-gradient">add a book to your library</h1>
     <div class="addBook">
-        <button type="button" class="openModalButton">add</button>
+        <button type="button" class="openModalButton btn-gradient-border btn">add</button>
     </div>
     <div class="formModal">
         <form>
             <button type="button" class="closeModalButton">x</button>
             <input class="bookTitleInput" type="text">
-            <button type="button">add book</button>
+            <button type="button" class="addBookButton">add book</button>
         </form>
     </div>
     <div class="bookContainer">
