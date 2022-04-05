@@ -69,6 +69,9 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border: 1px solid pink;
+    width: 100%;
+
 }
 .formModalForms{
     display: flex;
@@ -89,9 +92,20 @@ body{
 .closeModalButton:hover{
     color: rgb(252, 4, 4);
     transition: 0.2s ease all;
+}
+form{
+    display: flex;
+    width: 80vw;
+}
+form span {
+    display: flex;
+    justify-content: space-between;
+}
 
-
-
+.bookTitleInput{
+    width: 80%;
+    border-radius: 50px;
+    position: relative;
 }
 .bookContainer {
     height: 70%;
