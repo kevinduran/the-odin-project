@@ -129,23 +129,36 @@ label{
     padding: 2em;
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    border: 1px solid red;
+    grid-template-rows: 50% 50%;
 }
 .book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background: linear-gradient(135deg, rgb(47, 128, 237) 0%, #B2FFDA 100%);
     border-radius: 15px;
     margin: 15px;
     box-shadow: 0 0 80px rgb(2, 110, 252), 0 0 32px rgba(172, 246, 184, 0.24);
 }
 .book2{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     box-shadow: 0 0 80px #0c9d30, 0 0 32px #b678b078;
     background: linear-gradient(135deg, #0c9d30 0%, #f4f4f4 100%);
     border-radius: 15px;
     margin: 15px;
 }
 .book3{
-    box-shadow: 0 0 80px #d33d17, 0 0 32px #b678b078;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 80px #d33d17, 0 0 32px #b678b078;
     background: linear-gradient(135deg, #d33d17 0%, #e4e6e8 100%);
     border-radius: 15px;
     margin: 15px;

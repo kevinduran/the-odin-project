@@ -35,13 +35,13 @@ function Book(title,author,pages) {
 }
 
 
-function addBookToLibrary(){
-    var test = new Book('sdf','sdfaa',4)
-    myLibrary.push(test)
-    myLibrary.push(test)
-    console.log(myLibrary)
-}
-addBookToLibrary()
+// function addBookToLibrary(){
+//     var test = new Book('sdf','sdfaa',4)
+//     myLibrary.push(test)
+//     myLibrary.push(test)
+//     console.log(myLibrary)
+// }
+// addBookToLibrary()
 
 
 var bookContainer= document.querySelector('.bookContainer');
