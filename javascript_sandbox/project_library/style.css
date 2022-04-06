@@ -105,6 +105,7 @@ form span {
 label{
     color: white;
     letter-spacing: 2px;
+    margin: 0 auto;
 }
 
 .bookTitleInput{
@@ -125,6 +126,14 @@ label{
 .bookContainer {
     height: 70%;
     margin-top: 9%;
-    border: 1px solid red;
+    padding: 2em;
+    display: flex;
+}
+.book{
+    height: 40%;
+    width: 25%;
+    background: linear-gradient(135deg, #2F80ED 0%, #B2FFDA 100%);
+    border-radius: 15px;
+    margin: 15px;
 }
 
