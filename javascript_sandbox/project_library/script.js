@@ -15,18 +15,17 @@ closeModalButton.addEventListener('click',()=>{
 })
 
 addBookButton.addEventListener('click',()=>{
-    var test = document.querySelector('.bookTitleInput').value;
-    addBookToLibrary(test)
+    var bookTitle = document.querySelector('.bookTitleInput').value;
+    addBookToLibrary(bookTitle)
     const formModal = document.querySelector('.formModal')
     formModal.classList.remove('formModalActive')
     document.querySelector('.bookTitleInput').value = ''
-    displayBooks()
+    // displayBooks()
 })
 
 function addBookToLibrary(title,author,pages){
     var newBook = new Book(title,author,pages)
     myLibrary.push(newBook)
-    console.log(myLibrary)
 }
 
 function displayBooks(){
@@ -37,6 +36,9 @@ function displayBooks(){
         myDiv.textContent= x.title;
         bookContainer.appendChild(myDiv);
     })
+    //the issue is we are mapping through every unit and displaying it every time we click the button
+    //we need to target the last value of the array becasue we pushed it...
+    //target last value and THEN bookContainer.appendChild(mydiv)
 }
 
 function Book(title,author,pages) {
