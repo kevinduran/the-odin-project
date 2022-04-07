@@ -144,33 +144,5 @@ label{
     border-radius: 15px;
     margin: 15px;
     font-family: 'Roboto', sans-serif;
+    padding: 6.9px;
 }
-.book2{
-    height: 50%;
-    width: 25%;
-    min-width: 200px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0 0 80px #0c9d30, 0 0 32px #b678b078;
-    background: linear-gradient(135deg, #0c9d30 0%, #f4f4f4 100%);
-    border-radius: 15px;
-    margin: 15px;
-}
-.book3{
-    height: 50%;
-    width: 25%;
-    min-width: 200px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0 0 80px #d33d17, 0 0 32px #b678b078;
-    background: linear-gradient(135deg, #d33d17 0%, #e4e6e8 100%);
-    border-radius: 15px;
-    margin: 15px;
-}
-
