@@ -4,8 +4,6 @@ const addBookButton = document.querySelector('.addBookButton')
 const bookContainer = document.querySelector('.bookContainer')
 let myLibrary = [];
 
-
-
 openModalButton.addEventListener('click',()=>{
     const formModal = document.querySelector('.formModal')
     formModal.classList.add('formModalActive')
@@ -46,5 +44,3 @@ function Book(title,author,pages) {
     this.author=author;
     this.pages=pages;
 }
-
-
