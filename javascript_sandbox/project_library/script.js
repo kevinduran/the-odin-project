@@ -49,7 +49,7 @@ function displayBooks(book){
     var author = document.createElement('p');
     author.textContent = book.author;
     var pages = document.createElement('p');
-    pages.textContent = book.pages
+    pages.textContent = book.pages + ' pg.'
     myDiv.appendChild(title)
     myDiv.appendChild(author)
     myDiv.appendChild(pages)

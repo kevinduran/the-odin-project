@@ -143,6 +143,7 @@ label{
     flex-direction: column;
     border-radius: 15px;
     margin: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 .book2{
     height: 50%;
