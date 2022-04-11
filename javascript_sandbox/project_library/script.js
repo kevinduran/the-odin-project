@@ -62,8 +62,8 @@ function displayBooks(book){
     //-----adding random color to each book
     const randomColor = Math.floor(Math.random()*16777215).toString(16);
     const style = {
-    boxShadow: '0 0 80px #'+randomColor+', 0 0 32px #b678b078',
-    background: 'linear-gradient(135deg, #'+randomColor+' 0%, #f4f4f4 100%)'
+        boxShadow: '0 0 80px #'+randomColor+', 0 0 32px #b678b078',
+        background: 'linear-gradient(135deg, #'+randomColor+' 0%, #f4f4f4 100%)'
     }
     Object.assign(myDiv.style,style)
     //-----
@@ -75,7 +75,14 @@ function displayBooks(book){
     author.textContent = book.author;
     var pages = document.createElement('p');
     pages.textContent = book.pages + ' pg.'
+    var deleteBook = document.createElement('button')
+    deleteBook.textContent='X'
+    deleteBook.classList.add('deleteBook')
+    deleteBook.addEventListener('click', function(){
+        book.closeBook()
+    })
 
+    myDiv.appendChild(deleteBook)
     myDiv.appendChild(title)
     myDiv.appendChild(author)
     myDiv.appendChild(pages)
@@ -88,10 +95,21 @@ function displayBooks(book){
 }
 
 
+//-----delete book
+    function deleteBook(){
+
+    }
+
+
+//-----
+
 //-----book constructor
 function Book(title,author,pages) {
     this.title=title;
     this.author=author;
     this.pages=pages;
+    this.closeBook = function(){
+        console.log(this.title)
+    }
 }
 //-----
