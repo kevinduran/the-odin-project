@@ -8,5 +8,5 @@ function Book(title,author,pages,haveRead){
     }
 }
 
-const test = new Book('lo`rd', 'mama', 2343, true)
+const test = new Book('lo`rd', 'papa', 2343, true)
 console.log(test.info());
