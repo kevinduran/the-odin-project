@@ -6,7 +6,7 @@ const call_api = () => {
         //above is small fix for CORS
       })
     .then(res=>res.json())
-    .then(data=>img.src=data.data.images.original.url)
+    .then(data=>img.src=data.data.images.fixed_height.url)
     .catch(err=>console.error('error!!!'))
 }
 
