@@ -1,12 +1,8 @@
-function Book(title,author,pages,haveRead){
-    this.title=title;
-    this.author=author;
-    this.pages=pages;
-    this.haveRead = haveRead;
-    this.info = function(){
-        return (this.title +" by "+ this.author+", "+this.pages)
-    }
+const call_api = () => {
+    fetch('https://api.giphy.com/v1/gifs/translate?api_key=YVKIj3DyD3OL3TGN7FeVATealNxUdDwm&s=cats')
+    .then(res=>res.json())
+    .then(data=>console.log(data))
+    .catch(err=>console.error('error!!!'))
 }
 
-const test = new Book('lo`rd', 'papa', 2343, true)
-console.log(test.info());
+call_api();
