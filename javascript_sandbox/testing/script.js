@@ -9,4 +9,4 @@ const img = document.querySelector('img');
 getCats();
 
 
-console.log('test')
+console.log('my cats:');
