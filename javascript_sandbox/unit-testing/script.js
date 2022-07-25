@@ -11,3 +11,4 @@ function orderTotal(order){
     return order.item.reduce((prev, cur)=> cur.price+prev,0)
 }
 
+console.log('test')
