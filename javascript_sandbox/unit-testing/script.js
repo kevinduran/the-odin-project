@@ -11,4 +11,20 @@ function orderTotal(order){
     return order.item.reduce((prev, cur)=> cur.price+prev,0)
 }
 
-console.log('1')
+//---------------------------------------
+
+function Person(name,age){
+    this.name = name
+    this.age = age
+    this.sayName = function(){
+        alert(name);
+    }
+}
+
+const Kevin = new Person('kevin',30)
+
+Person.prototype.sayLastName = function(){
+    alert('duran')
+}
+
+Kevin.sayLastName()
