@@ -27,4 +27,3 @@ Person.prototype.sayLastName = function(){
     alert('duran')
 }
 
-Kevin.sayLastName()
