@@ -13,17 +13,18 @@ function orderTotal(order){
 
 //---------------------------------------
 
+
 function Person(name,age){
-    this.name = name
-    this.age = age
-    this.sayName = function(){
-        alert(name);
-    }
+   this.name = name,
+   this.age = age
 }
 
-const Kevin = new Person('kevin',30)
+const Joe = new Person('joe',32)
 
-Person.prototype.sayLastName = function(){
-    alert('duran')
+Person.prototype.sayName = function() {
+    console.log('congrats '+this.name)
 }
 
+Joe.sayName()
+const Kevin = new Person('kevin',31);
+Kevin.sayName()
