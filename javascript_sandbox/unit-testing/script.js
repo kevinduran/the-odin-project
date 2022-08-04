@@ -29,3 +29,5 @@ Joe.sayName()
 const Kevin = new Person('kevin',31);
 Kevin.sayName()
 
+
+console.log('test')
