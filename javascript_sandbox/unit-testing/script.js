@@ -31,4 +31,3 @@ Kevin.sayName()
 
 
 
-console.log('kevin')
