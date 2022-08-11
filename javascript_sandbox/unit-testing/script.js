@@ -37,4 +37,3 @@ function Woman (age,name) {
     this.name = name
 }
 
-console.log(Woman instanceof Object)
