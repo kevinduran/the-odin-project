@@ -29,10 +29,12 @@ Joe.sayName()
 const Kevin = new Person('kevin',31);
 Kevin.sayName()
 console.log('test');
-console.log(': hello, I am Kevin.O')
+console.log(': hello, I am Kevin')
 
 
 function Woman (age,name) {
     this.age = age,
     this.name = name
 }
+
+console.log(Woman instanceof Object)
