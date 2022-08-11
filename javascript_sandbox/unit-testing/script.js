@@ -15,8 +15,8 @@ function orderTotal(order){
 
 
 function Person(name,age){
-   this.name = name,
-   this.age = age
+   this.name = name;
+   this.age = age;
 }
 
 const Joe = new Person('joe',32)
