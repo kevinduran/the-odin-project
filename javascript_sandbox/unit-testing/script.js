@@ -36,3 +36,6 @@ function Woman (age,name) {
     this.age = age,
     this.name = name
 }
+
+console.log('test')
+console.log('kevin')
