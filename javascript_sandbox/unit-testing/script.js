@@ -42,4 +42,3 @@ function Woman(age, name) {
         this.name = name
 }
 
-console.log('test')
