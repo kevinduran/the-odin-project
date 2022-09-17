@@ -5,7 +5,7 @@
 const http = require('http');
 
 
-//second we declare variables to hold our hostname and port 
+//second we declare variable to hold our hostname 
 const HOSTNAME= process.env.HOSTNAME || 'localhost';
 
 
@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 3000;
             //SECONDTIP---- process.env is a normal object, so you can override the value e
 
 
-            
+
 //fourth we declare a variable to hold our newly created server
     //our new server variable must
     //our server will need a status code 200
