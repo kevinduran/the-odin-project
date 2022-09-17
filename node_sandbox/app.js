@@ -5,7 +5,7 @@
 const http = require('http');
 
 
-//second we declare variable to hold our hostname 
+//second we declare variable to hold our hostname and point where it will be hosted
 const HOSTNAME= process.env.HOSTNAME || 'localhost';
 
 
