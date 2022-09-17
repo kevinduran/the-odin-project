@@ -1,5 +1,5 @@
 
-/*
+
 
 //first we declare a variable to hold our require() node module 'http'
 const http = require('http');
@@ -12,6 +12,9 @@ const HOSTNAME= process.env.HOSTNAME || 'localhost';
 //third we declare a variable to hold  our PORT variable that specifies...
 ///...the port the server should listen to
 const PORT = process.env.PORT || 3000;
+            //TIP---here we are checking the process.env.PORT before giving a fallback port.
+            //try to console.log(process.env.PORT) for a better idea
+            //SECONDTIP---- process.env is a normal object, so you can override the value easily
 
 
 //fourth we declare a variable to hold our newly created server
@@ -30,8 +33,3 @@ const server = http.createServer((request,response)=>{
 server.listen(PORT,HOSTNAME,()=>{
     console.log(`server running at http://${HOSTNAME}:${PORT}/`)
 })
-
-
- */
-
-console.log('the value of PORT is :', process.env.PORT)
