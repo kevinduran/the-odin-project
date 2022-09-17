@@ -1,6 +1,3 @@
-
-
-
 //first we declare a variable to hold our require() node module 'http'
 const http = require('http');
 
