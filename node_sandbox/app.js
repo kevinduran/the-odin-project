@@ -6,7 +6,7 @@ const HOSTNAME= process.env.HOSTNAME || 'localhost';
 
 //third we declare a variable to hold  our PORT variable that specifies...
 ///...the port the server should listen to
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3002;
             //TIP---here we are checking the process.env.PORT before giving a fallback port.
             //try to console.log(process.env.PORT) for a better idea
             //SECONDTIP---- process.env is a normal object, so you can override the value e
