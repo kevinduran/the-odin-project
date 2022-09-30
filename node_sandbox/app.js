@@ -1,20 +1,14 @@
 const http = require('http')
-const fs = require('fs')
-const { text } = require('stream/consumers')
-const port = 3000
 
-const server = http.createServer(function(req,res){
-    res.writeHead(200, {'content-type':'text/html'})
-    fs.readFile
+const PORT = process.env.PORT || 3002
 
-    res.write('hello,friend')
-    res.end()
+const server = http.createServer((req,res)=>{
+    res.statusCode=200
+    res.setHeader('Content-Type','text/plain')
+    res.end('hello,friend')
 })
 
-server.listen(port,function(error){
-    if(error) {
-        console.log('something went wrong: ',error)
-    }else{
-        console.log('server is listening on port: ' + port)
-    }
+server.listen(PORT,()=>{
+    console.log(`you can find your server at ${PORT}/`)
 })
+
