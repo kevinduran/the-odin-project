@@ -1,5 +1,5 @@
 
-// A VERY SIMPLE WEB SERVER
+// ------------------------- A VERY SIMPLE WEB SERVER -------------------------
 // const http = require('http')
 
 // const hostname = 'localhost'
@@ -16,7 +16,7 @@
 // })
 
 
-// A VERY SIMPLE COMMAND LINE TOOL
+//------------------------- A VERY SIMPLE COMMAND LINE TOOL -------------------------
 // const readline = require('readline');
 // const rl = readline.createInterface({
 //   input: process.stdin,
@@ -28,4 +28,21 @@
 //   rl.close();
 // });
 
+//------------------------- A VERY SIMPLE FILE WATCHER -------------------------
 
+const fs = require('fs');
+const path = require('path');
+
+const directory = './app.js';
+
+fs.watch(directory,(event,filename)=>{
+    if(event === 'change'){
+        const filepath = path.join(directory,filename)
+        console.log(`File ${filename} was changed`)
+    }
+    if(event === 'rename'){
+        console.log(`File ${filename} was added or deleted`)
+    }
+})
+
+console.log(`now watching ${directory} for changes`)
