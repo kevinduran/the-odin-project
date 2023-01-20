@@ -30,22 +30,22 @@
 
 //------------------------- A VERY SIMPLE FILE WATCHER -------------------------
 
-// const fs = require('fs');
-// const path = require('path');
+const fs = require('fs');
+const path = require('path');
 
-// const directory = './app.js';
+const directory = './app.js';
 
-// fs.watch(directory,(event,filename)=>{
-//     if(event === 'change'){
-//         const filepath = path.join(directory,filename)
-//         console.log(`File ${filename} was changed`)
-//     }
-//     if(event === 'rename'){
-//         console.log(`File ${filename} was added or deleted`)
-//     }
-// })
+fs.watch(directory,(event,filename)=>{
+    if(event === 'change'){
+        const filepath = path.join(directory,filename)
+        console.log(`File ${filename} was changed`)
+    }
+    if(event === 'rename'){
+        console.log(`File ${filename} was added or deleted`)
+    }
+})
 
-// console.log(`now watching ${directory} for changes`)
+console.log(`now watching ${directory} for changes`)
 
-//------------------------- A VERY SIMPLE FILE WATCHER -------------------------
+//------------------------- x -------------------------
 
